@@ -6,13 +6,13 @@ import pygame, sys, eztext
 
 pygame.init()
 screen = pygame.display.set_mode((600,800))
-font = pygame.font.SysFont("Arial", 50)
+font = pygame.font.SysFont("comicsansms", 50)
 title = font.render("Crossword", True, (0, 0, 0))
 KEY_REPEAT_SETTING = (200,70)
 clock = pygame.time.Clock()
 grey = (211,211,211)
 clickedgrey = (169,169,169)
-font2 = pygame.font.SysFont("Arial", 12)
+font2 = pygame.font.SysFont("comicsansms", 12)
 currentbox = 1
 
 
@@ -117,7 +117,7 @@ def Board():
         txtbx69 = eztext.Input(maxlength=1, color=(0,0,0), prompt=' ', x=226, y = 192)
         txtbx70 = eztext.Input(maxlength=1, color=(0,0,0), prompt=' ', x=226, y = 204)
 
-        correct1 = "r"
+        correct1 = "R"
         correct2 = "o"
         correct3 = "n"
 
@@ -221,13 +221,13 @@ def Board():
                 Down = font.render("DOWN:", True, (0,0,0))
                 screen.blit(Down,(95 - Down.get_width() // 2, 510 - Down.get_height() // 2))
 
-                Question1 = font2.render("1. The only Weasley that didnt fight for the Order at the Battle of Hogwarts", True, (0, 0, 0))
+                Question1 = font2.render("1. The only Weasley that did not fight with the Order at the Battle of Hogwarts", True, (0, 0, 0))
                 screen.blit(Question1,(200 - Question1.get_width() // 2, 400 - Question1.get_height() // 2))
 
-                Question2 = font2.render("2.Tri Wizard Tournament contest that married Bill Weasley", True, (0, 0, 0))
+                Question2 = font2.render("2. Tri Wizard Tournament contestant that married Bill Weasley", True, (0, 0, 0))
                 screen.blit(Question2,(158 - Question2.get_width() // 2, 550 - Question2.get_height() // 2))
 
-                Question3 = font2.render("3. To close the Mauraders Map you say:", True, (0, 0, 0))
+                Question3 = font2.render("3. To close the 'Mauraders Map' you say: ", True, (0, 0, 0))
                 screen.blit(Question3,(110 - Question3.get_width() // 2, 415 - Question3.get_height() // 2))
 
                 Question4 = font2.render("4. How many Horcrux's did Voldemort create (including Harry)", True, (0, 0, 0))
@@ -239,16 +239,16 @@ def Board():
                 Question6 = font2.render("6. Hogwarts house containing the colors Blue and Silver", True, (0, 0, 0))
                 screen.blit(Question6,(155 - Question6.get_width() // 2, 580 - Question6.get_height() // 2))
 
-                Question7 = font2.render("7. The horcrux destroyed by Neville", True, (0, 0, 0))
+                Question7 = font2.render("7. The Horcrux destroyed by Neville", True, (0, 0, 0))
                 screen.blit(Question7,(99 - Question7.get_width() // 2, 445 - Question7.get_height() // 2))
 
-                Question8 = font2.render("8. Horcrux tied to Rowena Ravenclaw", True, (0, 0, 0))
+                Question8 = font2.render("8. The Horcrux tied to Rowena Ravenclaw", True, (0, 0, 0))
                 screen.blit(Question8,(105 - Question8.get_width() // 2, 595 - Question8.get_height() // 2))
 
-                Question9 = font2.render("9. What does the Invisiblity cloak, Elder wand and Resurection stone combined make?", True, (0, 0, 0))
+                Question9 = font2.render("9. What does the Invisiblity Cloak, Elder Wand and Resurection Stone combined signify?", True, (0, 0, 0))
                 screen.blit(Question9,(236 - Question9.get_width() // 2, 460 - Question9.get_height() // 2))
 
-                Question10 = font2.render("10. Who was chosen by Voldemort to kill Dumbledore", True, (0, 0, 0))
+                Question10 = font2.render("10. Who was The Chosen One that was tasked to kill Dumbledore", True, (0, 0, 0))
                 screen.blit(Question10,(145 - Question10.get_width() // 2, 610 - Question10.get_height() // 2))
 
 
